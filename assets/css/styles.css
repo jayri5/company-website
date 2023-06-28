@@ -1097,10 +1097,12 @@ body.light-theme{
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #000000; 
 }
 
 .metric-label {
   font-size: 18px;
+  color: #000000; 
 }
 
 /* Additional styles for demonstration purposes */

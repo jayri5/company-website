@@ -131,3 +131,19 @@ const sr = ScrollReveal({
 sr.reveal('.home__data')
 sr.reveal('.home__handle', {delay: 700})
 sr.reveal('.home__social, .home__scroll', {delay: 900, origin: 'bottom'})
+
+
+
+var embeddedForm = document.getElementById('embeddedForm');
+
+  // Add event listener to the embedded form
+  embeddedForm.addEventListener('load', function() {
+    // Access the form within the iframe
+    var form = embeddedForm.contentDocument.querySelector('form');
+
+    // Add submit event listener to the form
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+      location.reload(); // Refresh the page
+    });
+  });

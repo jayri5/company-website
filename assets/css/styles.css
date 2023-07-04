@@ -332,7 +332,8 @@ body.light-theme{
 }
 
 .home__img{
-  width: 160px;
+  width: 200px;
+  height: 160px;
   border-radius: 1rem 1rem 1rem 1rem;
 }
 

@@ -29,57 +29,104 @@
     <body>
         <!--=============== HEADER ===============-->
         <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Home</a>
-                <a href="aboutus.html" class="nav__logo">About Us</a>
-                <a href="casestudies.html" class="nav__logo">Case Studies</a>
-                <a href="blog.html" class="nav__logo">Blog</a>
-                <a href="contactus.html" class="nav__logo">Contact Us</a>
+            <nav class="nav">
+                <div class="nav__logo">
+                  <img src="assets/img/vislogo.png" alt="Company Logo" class="logo__image"></div>
+                  <span class="logo__name">Virtual Interactive Solutionz</span>
                 
-                <div class="nav__menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class='bx bx-home-alt'></i>
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class='bx bx-user'></i>
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class='bx bx-book'></i>
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#work" class="nav__link">
-                                <i class='bx bx-briefcase-alt-2' ></i>
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class='bx bx-message-square-detail'></i>
-                            </a>
-                        </li> 
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">Home</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="aboutus.html" class="nav__link">About Us</a>
+                    <ul class="sub-links">
+                      <li><a href="aboutus.html#mission">Mission</a></li>
+                      <li><a href="aboutus.html#vision">Vision</a></li>
+                      <li><a href="aboutus.html#values">Values</a></li>
                     </ul>
-                </div>
-
-                <!--Theme change button -->
-                <!--<i class='bx bx-moon change-theme' id="theme-button"></i>-->
-            </nav>
+                  </li>
+                  <li class="nav__item">
+                    <a href="casestudies.html" class="nav__link">Case Studies</a>
+                    <ul class="sub-links">
+                      <li><a href="casestudies.html#case1">Case Study 1</a></li>
+                      <li><a href="casestudies.html#case2">Case Study 2</a></li>
+                      <li><a href="casestudies.html#case3">Case Study 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item">
+                    <a href="blog.html" class="nav__link">Blog</a>
+                    <ul class="sub-links">
+                      <li><a href="blog.html#post1">Blog Post 1</a></li>
+                      <li><a href="blog.html#post2">Blog Post 2</a></li>
+                      <li><a href="blog.html#post3">Blog Post 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item">
+                    <a href="contactus.html" class="nav__link">Contact Us</a>
+                    <ul class="sub-links">
+                      <li><a href="contactus.html#email">Email</a></li>
+                      <li><a href="contactus.html#phone">Phone</a></li>
+                      <li><a href="contactus.html#address">Address</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
         </header>
 
         <!--=============== MAIN ===============-->
         <main class="main">
             <!--=============== HOME ===============-->
             <section class="home section" id="home">
-             <div class="home__container container grid">
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <img src="assets/img/ex1.png" alt="Image 1">
+            <div class="carousel-caption">
+              <h1 id="changing-text">We offer <span class="dynamic-text" id="dynamic-text">development</span> solutions</h1></div>
+              <div class="carousel-description">Transform your learning experience with our comprehensive online courses and interactive platforms.</div>
+            
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/img/ex2.png" alt="Image 2">
+            <div class="carousel-caption">
+                <h1 id="changing-text">We offer <span class="dynamic-text" id="dynamic-text">animation</span> solutions</h1></div>
+              <div class="carousel-description">Access a vast library of educational resources and engage in virtual classrooms for immersive e-learning.</div>
+            
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/img/ex3.png" alt="Image 3">
+            <div class="carousel-caption">
+                <h1 id="changing-text">We offer <span class="dynamic-text" id="dynamic-text">marketing</span> solutions</h1></div>
+              <div class="carousel-description">Enhance your skills and knowledge through personalized learning paths tailored to your educational goals.</div>
+            
+          </div>
+
+          <div class="carousel-slide">
+            <img src="assets/img/ex3.png" alt="Image 3">
+            <div class="carousel-caption">
+                <h1 id="changing-text">We offer <span class="dynamic-text" id="dynamic-text">training</span> solutions</h1></div>
+              <div class="carousel-description">Enhance your skills and knowledge through personalized learning paths tailored to your educational goals.</div>
+            
+          </div>
+
+          <div class="carousel-slide">
+            <img src="assets/img/ex3.png" alt="Image 3">
+            <div class="carousel-caption">
+                <h1 id="changing-text">We offer <span class="dynamic-text" id="dynamic-text">designing</span> solutions</h1></div>
+              <div class="carousel-description">Enhance your skills and knowledge through personalized learning paths tailored to your educational goals.</div>
+            
+          </div>
+
+          <div class="carousel-slide">
+            <img src="assets/img/ex3.png" alt="Image 3">
+            <div class="carousel-caption">
+                <h1 id="changing-text">We offer <span class="dynamic-text" id="dynamic-text">coding</span> solutions</h1></div>
+              <div class="carousel-description">Enhance your skills and knowledge through personalized learning paths tailored to your educational goals.</div>
+            
+          </div>
+        </div>
+
+             <!--<div class="home__container container grid">
                  <div class="home__data">
                      <span class="home__greeting">Hello, We're</span>
                      <h1 class="home__name">Virtual Interactive Solutionz</h1>
@@ -87,13 +134,6 @@
 
                      <center><img src="assets/img/vislogo.png" class="home__img"> <br>
                         Elevate Your Education: Embrace the Future of Learning Today!</center>
-                     <!--<div class="home__buttons">
-                         <a download="" href="assets/pdf/Ansel-Cv.pdf" class="button button--ghost">
-                             Download CV
-                         </a>
-                         <div class="home__buttons">
-                         <a href="#about" class="button">About Us</a>
-                     </div>-->
                  </div>
 
                  <div class="home__social">
@@ -112,7 +152,7 @@
                     <i class='bx bx-mouse home__scroll-icon' ></i>
                     <span class="home__scroll-name">Scroll Down</span>
                 </a>
-             </div>  
+             </div>-->
             </section>
 
             <!--=============== ABOUT ===============-->
@@ -142,7 +182,7 @@
             <!--=============== SKILLS ===============-->
             <section class="skills section" id="skills">
               <!--<span class="section__subtitle">My Abilities</span> -->
-              <h2 class="section__title">Our Expertise</h2> 
+              <h2 class="section__title">What We Do - Our Expertise</h2> 
 
               <div class="skills__container container grid">
                   <div class="skills__content">
@@ -412,7 +452,7 @@
             </section>
 
             <!--=============== SERVICES ===============-->
-            <section class="services section" id="services">
+            <!--<section class="services section" id="services">
                 <span class="section__subtitle">Our Services</span>
                     <h2 class="section__title">What we offer</h2>
 
@@ -575,20 +615,74 @@
                             </div>
                         </div>
                     </div>
-            </section>
-
+            </section>-->
+            <section class="skills section" id="skills">
+            <h2 class="section__title">How We Do - Our Process</h2> 
+           
+            <div class="process-container">
+                <div class="process-step">
+                  <div class="step-front">
+                    <span>Step 1</span>
+                  </div>
+                  <div class="step-back">
+                    <h3>Step 1</h3>
+                    <p>Step 1 description goes here.</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <div class="connector-circle"></div>
+                </div>
+                <div class="process-step">
+                  <div class="step-front">
+                    <span>Step 2</span>
+                  </div>
+                  <div class="step-back">
+                    <h3>Step 2</h3>
+                    <p>Step 2 description goes here.</p>
+                  </div>
+                </div>
+                <div class="connector">
+                  <div class="connector-circle"></div>
+                </div>
+                <div class="process-step">
+                    <div class="step-front">
+                      <span>Step 3</span>
+                    </div>
+                    <div class="step-back">
+                      <h3>Step 3</h3>
+                      <p>Step 3 description goes here.</p>
+                    </div>
+                </div>
+                <div class="connector">
+                    <div class="connector-circle"></div>
+                  </div>
+                  <div class="process-step">
+                      <div class="step-front">
+                        <span>Step 4</span>
+                      </div>
+                      <div class="step-back">
+                        <h3>Step 4</h3>
+                        <p>Step 4 description goes here.</p>
+                      </div>
+                  </div>
+                  <div class="connector">
+                    <div class="connector-circle"></div>
+                  </div>
+                  <div class="process-step">
+                      <div class="step-front">
+                        <span>Step 5</span>
+                      </div>
+                      <div class="step-back">
+                        <h3>Step 5</h3>
+                        <p>Step 5 description goes here.</p>
+                      </div>
+                  </div>
+              </div>
+            </section> 
             <!--=============== WORK ===============-->
             <section class="work section" id="work">
                 <span class="section__subtitle">Our Portfolio</span>
                 <h2 class="section__title">Recent Works</h2>
-                
-                
-                <!--<div class="work__filters">
-                    <span class="work__item active-work" data-filter='all'>All</span>
-                    <span class="work__item" data-filter='.web'>Web</span>
-                    <span class="work__item" data-filter='.movil'>Movil</span>
-                    <span class="work__item" data-filter='.design'>Design</span>
-                </div>-->
 
                 <div class="work__container container grid">
                     <div class="work__card mix web">

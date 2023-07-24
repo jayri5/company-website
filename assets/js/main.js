@@ -6,6 +6,47 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
+const dynamicTexts = ["development", "animation", "marketing", "training", "designing", "coding"];
+let currentIndex = 0;
+
+function changeDynamicText() {
+  const dynamicTextElement = document.getElementById('dynamic-text');
+  dynamicTextElement.textContent = dynamicTexts[currentIndex] + ' ';
+  currentIndex = (currentIndex + 1) % dynamicTexts.length;
+}
+changeDynamicText();
+setInterval(changeDynamicText, 2000);
+
+
+
+let slideIndex = 0;
+showSlide(slideIndex);
+
+function changeSlide(n) {
+  showSlide(slideIndex += n);
+}
+
+function showSlide(n) {
+  const slides = document.getElementsByClassName("carousel-slide");
+  if (n >= slides.length) {
+    slideIndex = 0;
+  } else if (n < 0) {
+    slideIndex = slides.length - 1;
+  }
+  
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex].style.display = "block";
+}
+
+setInterval(() => {
+  changeSlide(1);
+}, 2000);
+
+
+
 /*=============== SERVICES MODAL ===============*/
 const modalViews = document.querySelectorAll('.services__modal'),
       modalBtns = document.querySelectorAll('.services__button'),
